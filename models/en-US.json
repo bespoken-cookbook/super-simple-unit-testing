@@ -17,29 +17,13 @@
                   "samples": []
                 },
                 {
-                    "name":"HelloWorldIntent",
-                    "slots":[
-
-                    ],
-                    "samples":[
+                    "name": "HelloWorldIntent",
+                    "samples": [
                         "hello",
                         "say hello",
-                        "say hello world"
-                    ]
-                },
-                {
-                    "name":"MyNameIsIntent",
-                    "slots":[
-                        {
-                            "name":"name",
-                            "type":"AMAZON.US_FIRST_NAME"
-                        }
+                        "hello world"
                     ],
-                    "samples":[
-                        "my name is {name}",
-                        "i am {name}",
-                        "you can call me {name}"
-                    ]
+                    "slots": []
                 }
             ]
         }

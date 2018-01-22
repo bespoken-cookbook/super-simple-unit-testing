@@ -3,17 +3,14 @@
   "version": "0.1.0",
   "description": "Super Simple Unit Testing for Alexa",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bespoken/super-simple-unit-testing.git"
   },
   "keywords": [
     "Alexa",
-    "Alexa",
-    "Skills",
-    "AudioPlayer"
+    "Alexa Skills"
   ],
   "author": "John Kelvie",
   "license": "Apache-2.0",
@@ -21,7 +18,8 @@
     "url": "https://github.com/bespoken/super-simple-unit-testing/issues"
   },
   "homepage": "https://github.com/bespoken/super-simple-unit-testing#readme",
-  "devDependencies": {
-
-  }
+  "dependencies": {
+    "alexa-sdk": "^1.0.25"
+  },
+  "devDependencies": {}
 }
