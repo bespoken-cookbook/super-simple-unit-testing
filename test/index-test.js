@@ -30,7 +30,7 @@ describe("Test the hello world skill", function() {
             expect(result.response.outputSpeech.ssml).to.exist;
             expect(result.response.outputSpeech.ssml).to.include("Hello World");
             done();
-        })
+        });
     });
 
     it("Should utter hello and get a response", function(done) {
@@ -38,6 +38,14 @@ describe("Test the hello world skill", function() {
             expect(result.response.outputSpeech.ssml).to.exist;
             expect(result.response.outputSpeech.ssml).to.include("Hello World");
             done();
-        })
+        });
+    });
+
+    it("Should utter help and get a response", function(done) {
+        alexa.utter("help").then((result) => {
+            expect(result.response.outputSpeech.ssml).to.exist;
+            expect(result.response.outputSpeech.ssml).to.include("This is the Hello World Sample Skill");
+            done();
+        });
     });
 });
