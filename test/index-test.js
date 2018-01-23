@@ -22,7 +22,11 @@ describe("Test the hello world skill", function() {
     });
 
     it("Should launch the skill and get a response", function(done) {
-        alexa.launch().then((result) => {
+        alexa.filter(function(request) {
+            request.context.System.device.supportedInterfaces.Display = {};
+            request.context.System.device.supportedInterfaces.VideoApp = {};
+            return request;
+        }).launch().then((result) => {
             expect(result.response.outputSpeech.ssml).to.exist;
             expect(result.response.outputSpeech.ssml).to.include("Hello World");
             done();
