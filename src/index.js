@@ -1,6 +1,7 @@
 const Alexa = require("alexa-sdk");
 
 exports.handler = function (event, context) {
+    console.log(JSON.stringify(event, null, 2));
     const alexa = Alexa.handler(event, context);
     // To enable string internationalization (i18n) features, set a resources object.
     alexa.registerHandlers(handlers);
