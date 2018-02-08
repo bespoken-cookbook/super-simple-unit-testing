@@ -6,7 +6,11 @@
             "intents":[
                 {
                   "name": "AMAZON.CancelIntent",
-                  "samples": []
+                  "samples": [
+                    "cancel",
+                    "wait",
+                    "cancel hello world"
+                  ]
                 },
                 {
                   "name": "AMAZON.HelpIntent",
@@ -14,7 +18,12 @@
                 },
                 {
                   "name": "AMAZON.StopIntent",
-                  "samples": []
+                  "samples": [
+                    "stop",
+                    "end",
+                    "stop hello world",
+                    "end hello world"
+                  ]
                 },
                 {
                     "name": "HelloWorldIntent",
